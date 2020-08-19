@@ -1,4 +1,4 @@
-let rad = 200; // Width of the shape
+let rad = 100; // Width of the shape
 let xpos, ypos; // Starting position of shape
 
 let xspeed = 3.8; // Speed of the shape
@@ -34,11 +34,11 @@ function setup() {
     rable.src = "lib/day03.png";
 	
 noStroke();
-  frameRate(50);
+  frameRate(80);
   ellipseMode(RADIUS);
   // Set the starting position of the shape
-  xpos = width / 2;
-  ypos = height / 2;
+  xpos = windowWidth/2;
+  ypos = windowHeight/2;
 }
 
 
@@ -64,7 +64,7 @@ function draw() {
   // Draw the shape
   drawingContext.drawImage(img,xpos, ypos, rad, rad);
   drawingContext.drawImage(day,xpos/3, ypos/2, rad, rad);
-    drawingContext.drawImage(memo,xpos/6, ypos, rad, rad);
+    drawingContext.drawImage(memo,xpos/4, ypos, rad, rad);
 	  drawingContext.drawImage(rable,xpos/2, ypos/4, rad, rad);
 }
 
