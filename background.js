@@ -89,19 +89,28 @@ function mouseMoved() {
  
 function touchMoved() {
 	drawingContext.drawImage(wc,xpos/ 3, ypos/ 3, 150, 150);
-
-}
-
-function touchStarted() {
-	drawingContext.drawImage(wc,xpos/ 3, ypos/ 3, 150, 150);
-	
-	link = createA("https://www.instagram.com/yuchunjuju","Go to Instagram", "_blank");
+	    link = createA("https://www.instagram.com/yuchunjuju","Go to Instagram", "_blank");
 	link.position(xpos, ypos);  
 	    link = createA("https://www.instagram.com/ambrala_art","Go to memorable day", "_blank");
 	link.position(xpos, ypos/ 2);  
 	
         link = createA("https://yuchunju.github.io/art","Go to home", "_blank");
 	link.position(xpos/ 2, ypos); 
+
+}
+
+function touchStarted() {
+	drawingContext.drawImage(wc,xpos/ 3, ypos/ 3, 150, 150);
+	    link = createA("https://www.instagram.com/yuchunjuju","Go to Instagram", "_blank");
+	link.position(xpos, ypos);  
+	    link = createA("https://www.instagram.com/ambrala_art","Go to memorable day", "_blank");
+	link.position(xpos, ypos/ 2);  
+	
+        link = createA("https://yuchunju.github.io/art","Go to home", "_blank");
+	link.position(xpos/ 2, ypos); 
+
+	
+	
 }
 
 function deviceShaken() {
