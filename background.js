@@ -8,6 +8,8 @@ let yspeed = 2.2; // Speed of the shape
 let xdirection = 1; // Left or Right
 let ydirection = 1; // Top to Bottom
 
+
+
 var link;
 
 function windowResized() {
@@ -75,48 +77,49 @@ function draw() {
   drawingContext.drawImage(day,xpos, ypos/ 2, rad, rad);
   drawingContext.drawImage(memo,xpos/ 2, ypos/ 2, rad, rad);
   drawingContext.drawImage(rable,xpos/ 2, ypos, rad, rad);
-   drawingContext.drawImage(me,xpos/ 3, ypos/ 3, rad, rad);
+   drawingContext.drawImage(me,xpos/ 3.5, ypos/ 4, rad, rad);
    
+  
+ 
+    drawingContext.drawImage(wc,xpos/ 3.44, ypos/ 2.2, 113, 113) //render the stored slime mold image file to the canvas at 200,200 x/y position and 100x100 pieels high and wide
+ 
 }
 
 
   
  
-function mouseMoved() {
-	drawingContext.drawImage(wc,xpos/ 3, ypos/ 3, 150, 150);
- }
- 
- 
 function touchMoved() {
-	drawingContext.drawImage(wc,xpos/ 3, ypos/ 3, 150, 150);
+	
 	    link = createA("https://www.instagram.com/yuchunjuju","Go to Instagram", "_blank");
 	link.position(xpos, ypos);  
+	
 	    link = createA("https://www.instagram.com/ambrala_art","Go to memorable day", "_blank");
 	link.position(xpos, ypos/ 2);  
+	link.style('color', '#FF66CC');
 	
         link = createA("https://yuchunju.github.io/art","Go to home", "_blank");
 	link.position(xpos/ 2, ypos); 
+	link.style('color', '#32CD32');
 
 }
 
 function touchStarted() {
-	drawingContext.drawImage(wc,xpos/ 3, ypos/ 3, 150, 150);
+	
+       
+
 	    link = createA("https://www.instagram.com/yuchunjuju","Go to Instagram", "_blank");
 	link.position(xpos, ypos);  
+	
+	
 	    link = createA("https://www.instagram.com/ambrala_art","Go to memorable day", "_blank");
 	link.position(xpos, ypos/ 2);  
+	link.style('color', '#FF66CC');
 	
         link = createA("https://yuchunju.github.io/art","Go to home", "_blank");
 	link.position(xpos/ 2, ypos); 
+	link.style('color', '#32CD32');
 
 	
 	
 }
 
-function deviceShaken() {
-		drawingContext.drawImage(wc,xpos/ 3, ypos/ 3, 150, 150);
-}
-
-function deviceMoved() {
-			drawingContext.drawImage(wc,xpos/ 3, ypos/ 3, 150, 150);
-}
