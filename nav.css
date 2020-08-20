@@ -3,29 +3,29 @@
 
 
 #home{
-	width:windowWidth;
-    float:left;
+	position:absolute;
+	left:40%;
+	top:20%;
+    
 	}
 	
 #home li{
 	display:block;
-	background:url('lib/me03.png');
-    background-size:103%;
+	background:;
+
     background-repeat:no-repeat;
-	padding:2rem;
+	padding:10rem;
 	transition-property:background-img;
-    float:left;
 	}
 #home li:hover{
-	background:url('lib/me04.png');
+	background:url('lib/me02.png');
     background-size:80%;
     background-repeat:no-repeat;
-	padding:5rem;
+	padding:10rem;
 }	
 
 #home li a{
-	width:100%;
-	height:100%;
+
 	display:block;
 	text-decoration: none;
 	color:#fff;

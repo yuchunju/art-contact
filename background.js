@@ -1,6 +1,13 @@
-let angle1 = 0;
-let angle2 = 0;
-let scalar = 200;
+
+let rad = 160; // Width of the shape
+let xpos, ypos; // Starting position of shape
+
+let xspeed = 2.8; // Speed of the shape
+let yspeed = 2.2; // Speed of the shape
+
+let xdirection = 1; // Left or Right
+let ydirection = 1; // Top to Bottom
+
 
 
 function windowResized() {
@@ -29,41 +36,43 @@ function setup() {
 	me = new Image();
     me.src = "lib/me01.png";
 	
-//   meMode(CENTER);
+  frameRate(30);
+  ellipseMode(RADIUS);
+  // Set the starting position of the shape
+  xpos = width / 2;
+  ypos = height / 2;
 }
 
 
 
 
 function draw() {
-	background('#99CCFF');
+  background('#99CCFF');
 	
-  let ang1 = radians(angle1);
-  let ang2 = radians(angle2);
 
-  let x1 = width / 3.7 + scalar * cos(ang1);
-  let x2 = width / 2 + scalar * cos(ang2);
+ // Update the position of the shape
+  xpos = xpos + xspeed * xdirection;
+  ypos = ypos + yspeed * ydirection;
 
-  let y1 = height / 2 + scalar * sin(ang1);
-  let y2 = height / 2 + scalar * sin(ang2);
+  // Test to see if the shape exceeds the boundaries of the screen
+  // If it does, reverse its direction by multiplying by -1
+  if (xpos > width - rad || xpos < rad) {
+    xdirection *= -1;
+  }
+  if (ypos > height - rad || ypos < rad) {
+    ydirection *= -1;
+  }
 
-  fill(0);
-  drawingContext.drawImage(me,width * 0.35, height * 0.25, 300, 300);
+  // Draw the shape
 
-  fill(0);
-  drawingContext.drawImage(img, x1, height * 0.25 - 190, scalar, scalar);
-  drawingContext.drawImage(day,x2, height * 0.25 + 275, scalar, scalar);
-
-  fill(0);
-  drawingContext.drawImage(memo,width * 0.35 - 148, y1, scalar, scalar);
-  drawingContext.drawImage(rable,width * 0.35 + 220, y2, scalar, scalar);
-
-  angle1 += 2;
-  angle2 += 3;
-
-
+  drawingContext.drawImage(img,xpos, ypos, rad, rad);
+  drawingContext.drawImage(day,xpos, ypos/ 2, rad, rad);
+  drawingContext.drawImage(memo,xpos/ 2, ypos/ 2, rad, rad);
+  drawingContext.drawImage(rable,xpos/ 2, ypos, rad, rad);
+   drawingContext.drawImage(me,xpos/ 3, ypos, rad, rad);
 }
-
-
-
+  
+  
+  
+ 
 
