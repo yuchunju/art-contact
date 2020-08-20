@@ -1,5 +1,5 @@
 
-let rad = 160; // Width of the shape
+let rad = 130; // Width of the shape
 let xpos, ypos; // Starting position of shape
 
 let xspeed = 2.8; // Speed of the shape
@@ -69,7 +69,7 @@ function draw() {
   drawingContext.drawImage(day,xpos, ypos/ 2, rad, rad);
   drawingContext.drawImage(memo,xpos/ 2, ypos/ 2, rad, rad);
   drawingContext.drawImage(rable,xpos/ 2, ypos, rad, rad);
-   drawingContext.drawImage(me,xpos/ 3, ypos, rad, rad);
+   drawingContext.drawImage(me,xpos/ 3, ypos/ 3, rad, rad);
 }
   
   
