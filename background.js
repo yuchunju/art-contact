@@ -105,3 +105,11 @@ function touchMoved() {
 function touchStarted() {
 	drawingContext.drawImage(wc,xpos/ 3, ypos/ 3, 150, 150);
 }
+
+function deviceShaken() {
+		drawingContext.drawImage(wc,xpos/ 3, ypos/ 3, 150, 150);
+}
+
+function deviceMoved() {
+			drawingContext.drawImage(wc,xpos/ 3, ypos/ 3, 150, 150);
+}
