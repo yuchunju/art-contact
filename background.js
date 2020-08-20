@@ -87,7 +87,9 @@ function mouseClicked(){
 	link.position(xpos, ypos);  
 	    link = createA("https://www.instagram.com/ambrala_art","Go to memorable day", "_blank");
 	link.position(xpos, ypos/ 2);  
- 
+	
+        link = createA("https://yuchunju.github.io/art","Go to home", "_blank");
+	link.position(xpos/ 2, ypos); 
 	
 }
  
