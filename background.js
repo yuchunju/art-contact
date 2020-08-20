@@ -96,3 +96,8 @@ function mouseClicked(){
 function mouseMoved() {
 	drawingContext.drawImage(wc,xpos/ 3, ypos/ 3, 150, 150);
  }
+ 
+ 
+function touchMoved() {
+	drawingContext.drawImage(wc,xpos/ 3, ypos/ 3, 150, 150);
+}
