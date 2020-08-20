@@ -72,16 +72,19 @@ function draw() {
   }
 
   // Draw the shape
-
+  drawingContext.drawImage(me,xpos/ 3.5, ypos/ 4, rad, rad);
+   drawingContext.drawImage(wc, xpos/ 3.45, ypos/ 2.2, 113, 113);
+   
+   
   drawingContext.drawImage(img,xpos, ypos, rad, rad);
   drawingContext.drawImage(day,xpos, ypos/ 2, rad, rad);
   drawingContext.drawImage(memo,xpos/ 2, ypos/ 2, rad, rad);
   drawingContext.drawImage(rable,xpos/ 2, ypos, rad, rad);
-   drawingContext.drawImage(me,xpos/ 3.5, ypos/ 4, rad, rad);
+  
+
    
   
  
-    drawingContext.drawImage(wc,xpos/ 3.44, ypos/ 2.2, 113, 113) //render the stored slime mold image file to the canvas at 200,200 x/y position and 100x100 pieels high and wide
  
 }
 
