@@ -78,7 +78,7 @@ function draw() {
    
   drawingContext.drawImage(img,xpos, ypos, rad, rad);
   drawingContext.drawImage(day,xpos, ypos/ 2, rad, rad);
-  drawingContext.drawImage(memo,xpos/ 2, ypos/ 1.7, rad, rad);
+  drawingContext.drawImage(memo,xpos/ 2, ypos/ 1.5, rad, rad);
   drawingContext.drawImage(rable,xpos/ 2, ypos, rad, rad);
   
 
