@@ -8,7 +8,7 @@ let yspeed = 2.2; // Speed of the shape
 let xdirection = 1; // Left or Right
 let ydirection = 1; // Top to Bottom
 
-
+var link;
 
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
@@ -23,6 +23,8 @@ function setup() {
 
     img = new Image();
     img.src = "lib/day04.png";
+   
+
  
 	day = new Image();
     day.src = "lib/day01.png";
@@ -36,8 +38,12 @@ function setup() {
 	me = new Image();
     me.src = "lib/me01.png";
 	
+	
+	wc = new Image();
+    wc.src = "lib/qrcode.jpg";
+	
   frameRate(30);
-  ellipseMode(RADIUS);
+
   // Set the starting position of the shape
   xpos = width / 2;
   ypos = height / 2;
@@ -70,9 +76,21 @@ function draw() {
   drawingContext.drawImage(memo,xpos/ 2, ypos/ 2, rad, rad);
   drawingContext.drawImage(rable,xpos/ 2, ypos, rad, rad);
    drawingContext.drawImage(me,xpos/ 3, ypos/ 3, rad, rad);
+   
 }
-  
-  
-  
- 
 
+
+  
+function mouseClicked(){
+
+ 	    link = createA("https://www.instagram.com/yuchunjuju","Go to Instagram", "_blank");
+	link.position(xpos, ypos);  
+	    link = createA("https://www.instagram.com/ambrala_art","Go to memorable day", "_blank");
+	link.position(xpos, ypos/ 2);  
+ 
+	
+}
+ 
+function mouseMoved() {
+	drawingContext.drawImage(wc,xpos/ 3, ypos/ 3, 150, 150);
+ }

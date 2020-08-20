@@ -3,28 +3,12 @@
 
 
 #home{
-	position:absolute;
-	left:40%;
-	top:20%;
+
     
 	}
 	
-#home li{
-	display:block;
-	background:;
 
-    background-repeat:no-repeat;
-	padding:10rem;
-	transition-property:background-img;
-	}
-#home li:hover{
-	background:url('lib/me02.png');
-    background-size:80%;
-    background-repeat:no-repeat;
-	padding:10rem;
-}	
-
-#home li a{
+#home p{
 
 	display:block;
 	text-decoration: none;
