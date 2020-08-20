@@ -72,8 +72,8 @@ function draw() {
   }
 
   // Draw the shape
-  drawingContext.drawImage(me,xpos/ 3.5, ypos/ 4, rad, rad);
-   drawingContext.drawImage(wc, xpos/ 3.45, ypos/ 2.2, 113, 113);
+  drawingContext.drawImage(me,xpos/ 3.5, ypos/ 4, 115, 115);
+   drawingContext.drawImage(wc, xpos/ 3.5, ypos/ 2.3, 105, 105);
    
    
   drawingContext.drawImage(img,xpos, ypos, rad, rad);
