@@ -101,3 +101,7 @@ function mouseMoved() {
 function touchMoved() {
 	drawingContext.drawImage(wc,xpos/ 3, ypos/ 3, 150, 150);
 }
+
+function touchStarted() {
+	drawingContext.drawImage(wc,xpos/ 3, ypos/ 3, 150, 150);
+}
