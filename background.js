@@ -100,7 +100,7 @@ function touchMoved() {
 	link.position(xpos, ypos/ 2);  
 	link.style('color', '#FF66CC');
 	
-        link = createA("https://yuchunju.github.io/art","Go to home", "_blank");
+        link = createA("https://yuchunju.github.io/art","Go to home 回首页 Torna Home", "_blank");
 	link.position(xpos/ 2, ypos); 
 	link.style('color', '#32CD32');
 
@@ -118,7 +118,7 @@ function touchStarted() {
 	link.position(xpos, ypos/ 2);  
 	link.style('color', '#FF66CC');
 	
-        link = createA("https://yuchunju.github.io/art","Go to home", "_blank");
+        link = createA("https://yuchunju.github.io/art","Go to home 回首页 Va Home", "_blank");
 	link.position(xpos/ 2, ypos); 
 	link.style('color', '#32CD32');
 
