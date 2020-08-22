@@ -38,7 +38,8 @@ select:focus {
 	
 
 #home p{
-
+	position:relative;
+	top:1.5rem;
 	display:block;
 	text-decoration: none;
 	color:#fff;
