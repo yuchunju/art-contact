@@ -2,7 +2,8 @@
 /* CSS Document */
 
 select {
-
+	      position:relative;
+          top:.5rem;
           float:right; 
 		  background:none;
 		  color:#fff;
@@ -39,6 +40,7 @@ select:focus {
 #home p{
 	position:relative;
 	top:1.5rem;
+	left:.5rem;
 	display:block;
 	text-decoration: none;
 	color:#fff;
