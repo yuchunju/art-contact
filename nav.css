@@ -44,13 +44,27 @@ select:focus {
 	position:relative;
 	top:1.5rem;
 	left:.5rem;
-	display:block;
+	display:inline-table;
 	text-decoration: none;
 	color:#fff;
 	font-weight:bold;
 	cursor:help;
+	
 	}
 	
 
+@media (max-width: 770px) {
+	#home p{
+	display:block;
+	
+	
+	}
+	#p1,#p2,#p3 {   
+	writing-mode: vertical-rl;
+
+     }
+		  
+  
+}
 
 	

@@ -8,24 +8,27 @@ var LanguageList = {
 
 //languages Objects
 var WORDS_EN = {
-  "text1" : "Nonstop click (phone：long press), please!",
-  "text2" : "Nonstop draw lines, please!",
-  "text3" : "Open what you draw, please!",
+  "text1" : "Click (phone：long press), please!",
+	"text2" : "Nonstop click, please!",
+  "text3" : "Nonstop draw lines, please!",
+  "text4" : "Open what you draw, please!",
 
 
 };
 
 var WORDS_CN = {
- "text1" : "请连续点击（手机：长按）！",
-  "text2" : "请不停地画线！",
-  "text3" : "请打开您画的东西！",
+ "text1" : "请点击（手机：长按）！",
+	"text2" : "请不停地点击！",
+  "text3" : "请不停地画线！",
+  "text4" : "请打开您画的东西！",
 
 };
 
 var WORDS_IT = {
- "text1" : "Clic continuo (cellulare: pressione lunga), per favore!",
-  "text2" : "Disegna linee senza sosta, per favore!",
-  "text3" : "Apri quello che disegni, per favore!",
+ "text1" : "Click (cellulare: pressione lunga), per favore!",
+	"text2" : "Clic continuo, per favore!",
+  "text3" : "Disegna linee senza sosta, per favore!",
+  "text4" : "Apri quello che disegni, per favore!",
 
 };
 

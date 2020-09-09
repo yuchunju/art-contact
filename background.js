@@ -107,14 +107,16 @@ function touchMoved() {
 	link = createA("https://www.youtube.com/channel/UCiCb1C6F-BasTGH6yutx7KA?","Youtube", "_blank");
 	link.position(xpos/ 2, ypos/ 1.5);  
 	link.style('color', '#E0CD0F');
+	
+		link = createA("https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzU2MjU2NDU3Ng==&scene=124#wechat_redirect","Wechat", "_blank");
+	link.position(xpos/ 3.5, ypos/ 4);  
+	link.style('color', '#FFFFFF');
 
 }
 
 function touchStarted() {
 	
-       
-
-	    link = createA("https://www.instagram.com/yuchunjuju","Instagram", "_blank");
+      link = createA("https://www.instagram.com/yuchunjuju","Instagram", "_blank");
 	link.position(xpos, ypos);  
 	
 	    link = createA("https://www.pinterest.it/ambrala_art","Pinterest", "_blank");
@@ -128,8 +130,11 @@ function touchStarted() {
 	link = createA("https://www.youtube.com/channel/UCiCb1C6F-BasTGH6yutx7KA?","Youtube", "_blank");
 	link.position(xpos/ 2, ypos/ 1.5);  
 	link.style('color', '#E0CD0F');
-
 	
+		link = createA("https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzU2MjU2NDU3Ng==&scene=124#wechat_redirect","Wechat", "_blank");
+	link.position(xpos/ 3.5, ypos/ 4);  
+	link.style('color', '#FFFFFF');
+
 	
 }
 
