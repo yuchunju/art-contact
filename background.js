@@ -93,16 +93,20 @@ function draw() {
  
 function touchMoved() {
 	
-	    link = createA("https://www.instagram.com/yuchunjuju","Go to Instagram", "_blank");
+	    link = createA("https://www.instagram.com/yuchunjuju","Instagram", "_blank");
 	link.position(xpos, ypos);  
 	
-	    link = createA("https://www.instagram.com/ambrala_art","Go to memorable day", "_blank");
+	    link = createA("https://www.pinterest.it/ambrala_art","Pinterest", "_blank");
 	link.position(xpos, ypos/ 2);  
 	link.style('color', '#FF66CC');
 	
-        link = createA("https://yuchunju.github.io/art","Go to home 回首页 Torna Home", "_blank");
+        link = createA("https://yuchunju.github.io/art","Home 首页", "_blank");
 	link.position(xpos/ 2, ypos); 
 	link.style('color', '#32CD32');
+	
+	link = createA("https://www.youtube.com/channel/UCiCb1C6F-BasTGH6yutx7KA?","Youtube", "_blank");
+	link.position(xpos/ 2, ypos/ 1.5);  
+	link.style('color', '#E0CD0F');
 
 }
 
@@ -110,17 +114,20 @@ function touchStarted() {
 	
        
 
-	    link = createA("https://www.instagram.com/yuchunjuju","Go to Instagram", "_blank");
+	    link = createA("https://www.instagram.com/yuchunjuju","Instagram", "_blank");
 	link.position(xpos, ypos);  
 	
-	
-	    link = createA("https://www.instagram.com/ambrala_art","Go to memorable day", "_blank");
+	    link = createA("https://www.pinterest.it/ambrala_art","Pinterest", "_blank");
 	link.position(xpos, ypos/ 2);  
 	link.style('color', '#FF66CC');
 	
-        link = createA("https://yuchunju.github.io/art","Go to home 回首页 Torna Home", "_blank");
+        link = createA("https://yuchunju.github.io/art","Home 首页", "_blank");
 	link.position(xpos/ 2, ypos); 
 	link.style('color', '#32CD32');
+	
+	link = createA("https://www.youtube.com/channel/UCiCb1C6F-BasTGH6yutx7KA?","Youtube", "_blank");
+	link.position(xpos/ 2, ypos/ 1.5);  
+	link.style('color', '#E0CD0F');
 
 	
 	
