@@ -16,27 +16,85 @@
   <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
   
    <script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.js"></script>
-
    <script src="background.js"></script> 
-
-   <script src="lang.js"></script> 
-   <select id="country_select" onchange="loadsLanguage(this.value);">
-</select>
-
 </head>
 
  <body id="home" style="background-color:'#99CCFF';">
+    <button class="translate" id="it"><img src="lib/it.png"></button>
+    <button class="translate" id="zh"><img src="lib/zh.png"></button>
+    <button class="translate" id="en"><img src="lib/en.png" ></button>
 
- <p ><span class="lang-text1">click (phone：long press), please!</span> </p>
+	 
+	 
+ <p class="lang" key="text1">click (phone：long press), please! </p>
  &nbsp
- <p id="p1"><span class="lang-text2">Nonstop click, please! </span> </p>
+ <p  class="lang" key="text2" id="p1">Nonstop click, please! </p>
   &nbsp
- <p id="p2" ><span class="lang-text3">Nonstop draw lines, please! </span></p>
+ <p class="lang" key="text3" id="p2" >Nonstop draw lines, please!</p>
  &nbsp
- <p id="p3"><span class="lang-text4" >Open what you draw, please!</span> </p>
+ <p class="lang" key="text4"id="p3" >Open what you draw, please!</p>
 
 
- 
+ <script>
+var arrLang = {
+  "en": {
+  "text1" : "Click (phone：long press), please!",
+	"text2" : "Nonstop click, please!",
+  "text3" : "Nonstop draw lines, please!",
+  "text4" : "Open what you draw, please!",
+
+  },
+  "zh": {
+  "text1" : "请点击（手机：长按）！",
+  "text2" : "请不停地点击！",
+  "text3" : "请不停地画线！",
+  "text4" : "请打开您画的东西！",
+  },
+	  "it": {
+  "text1" : "Click (cellulare: pressione lunga), per favore!",
+  "text2" : "Clic continuo,",
+  "text3" : "Disegna linee senza sosta,",
+  "text4" : "Apri quello che disegni, per favore!",
+  }
+};
+
+// The default language is English
+var lang = "en";
+// Check for localStorage support
+if('localStorage' in window){
+   
+   var usrLang = localStorage.getItem('uiLang');
+   if(usrLang) {
+       lang = usrLang
+   }
+
+}
+
+
+console.log(lang);
+
+        $(document).ready(function() {
+
+          $(".lang").each(function(index, element) {
+            $(this).text(arrLang[lang][$(this).attr("key")]);
+          });
+        });
+
+        // get/set the selected language
+        $(".translate").click(function() {
+          var lang = $(this).attr("id");
+
+          // update localStorage key
+          if('localStorage' in window){
+               localStorage.setItem('uiLang', lang);
+               console.log( localStorage.getItem('uiLang') );
+          }
+
+          $(".lang").each(function(index, element) {
+            $(this).text(arrLang[lang][$(this).attr("key")]);
+          });
+        });
+</script>
 
 
 </body>
