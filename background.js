@@ -25,25 +25,25 @@ function setup() {
 
     img = new Image();
     img.src = "lib/day04.png";
-   
 
- 
+
+
 	day = new Image();
     day.src = "lib/day01.png";
-	
+
 	memo = new Image();
     memo.src = "lib/day02.png";
-	
+
 	rable = new Image();
     rable.src = "lib/day03.png";
-	
+
 	me = new Image();
     me.src = "lib/me01.png";
-	
-	
+
+
 	wc = new Image();
     wc.src = "lib/qrcode.jpg";
-	
+
   frameRate(30);
 
   // Set the starting position of the shape
@@ -56,7 +56,7 @@ function setup() {
 
 function draw() {
   background('#99CCFF');
-	
+
 
  // Update the position of the shape
   xpos = xpos + xspeed * xdirection;
@@ -74,67 +74,67 @@ function draw() {
   // Draw the shape
   drawingContext.drawImage(me,xpos/ 3.5, ypos/ 4, 115, 115);
    drawingContext.drawImage(wc, xpos/ 3.45, ypos/ 2.3, 105, 105);
-   
-   
+
+
   drawingContext.drawImage(img,xpos, ypos, rad, rad);
   drawingContext.drawImage(day,xpos, ypos/ 2, rad, rad);
   drawingContext.drawImage(memo,xpos/ 2, ypos/ 1.5, rad, rad);
   drawingContext.drawImage(rable,xpos/ 2, ypos, rad, rad);
-  
 
-   
-  
- 
- 
+
+
+
+
+
 }
 
 
-  
- 
+
+
 function touchMoved() {
-	
+
 	    link = createA("https://www.instagram.com/yuchunjuju","Instagram", "_blank");
-	link.position(xpos, ypos);  
-	
-	    link = createA("https://www.pinterest.it/ambrala_art","Pinterest", "_blank");
-	link.position(xpos, ypos/ 2);  
+	link.position(xpos, ypos);
+
+	    link = createA("mailto:yuchunjuju@gmail.com","yuchunjuju@gmail.com", "_blank");
+	link.position(xpos, ypos/ 2);
 	link.style('color', '#FF66CC');
-	
+
         link = createA("https://yuchunju.github.io/art","Home 首页", "_blank");
-	link.position(xpos/ 2, ypos); 
+	link.position(xpos/ 2, ypos);
 	link.style('color', '#32CD32');
-	
+
 	link = createA("https://www.youtube.com/channel/UCiCb1C6F-BasTGH6yutx7KA?","Youtube", "_blank");
-	link.position(xpos/ 2, ypos/ 1.5);  
+	link.position(xpos/ 2, ypos/ 1.5);
 	link.style('color', '#E0CD0F');
-	
+
 		link = createA("https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzU2MjU2NDU3Ng==&scene=124#wechat_redirect","Wechat", "_blank");
-	link.position(xpos/ 3.5, ypos/ 4);  
+	link.position(xpos/ 3.5, ypos/ 4);
 	link.style('color', '#FFFFFF');
 
 }
 
 function touchStarted() {
-	
+
       link = createA("https://www.instagram.com/yuchunjuju","Instagram", "_blank");
-	link.position(xpos, ypos);  
-	
-	    link = createA("https://www.pinterest.it/ambrala_art","Pinterest", "_blank");
-	link.position(xpos, ypos/ 2);  
+	link.position(xpos, ypos);
+
+	    link = createA("mailto:yuchunjuju@gmail.com","yuchunjuju@gmail.com", "_blank");
+	link.position(xpos, ypos/ 2);
 	link.style('color', '#FF66CC');
-	
+
         link = createA("https://yuchunju.github.io/art","Home 首页", "_blank");
-	link.position(xpos/ 2, ypos); 
+	link.position(xpos/ 2, ypos);
 	link.style('color', '#32CD32');
-	
+
 	link = createA("https://www.youtube.com/channel/UCiCb1C6F-BasTGH6yutx7KA?","Youtube", "_blank");
-	link.position(xpos/ 2, ypos/ 1.5);  
+	link.position(xpos/ 2, ypos/ 1.5);
 	link.style('color', '#E0CD0F');
-	
+
 		link = createA("https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzU2MjU2NDU3Ng==&scene=124#wechat_redirect","Wechat", "_blank");
-	link.position(xpos/ 3.5, ypos/ 4);  
+	link.position(xpos/ 3.5, ypos/ 4);
 	link.style('color', '#FFFFFF');
 
-	
+
 }
 
