@@ -108,7 +108,7 @@ function touchMoved() {
 	link.position(xpos/ 2, ypos/ 1.5);
 	link.style('color', '#E0CD0F');
 
-		link = createA("https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzU2MjU2NDU3Ng==&scene=124#wechat_redirect","Wechat", "_blank");
+		link = createA("https://mp.weixin.qq.com/s?__biz=MzkyMjUwNzQwOA==&mid=2247484037&idx=1&sn=daff3ec3d299ca578f6de5c55b6f82cf&chksm=c1f2037af6858a6c0e8d4bc306cb30e7cc612229d1521498b730b3321b12e84beb68a4d7cef8#rd","Wechat", "_blank");
 	link.position(xpos/ 3.5, ypos/ 4);
 	link.style('color', '#FFFFFF');
 
@@ -131,7 +131,7 @@ function touchStarted() {
 	link.position(xpos/ 2, ypos/ 1.5);
 	link.style('color', '#E0CD0F');
 
-		link = createA("https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzU2MjU2NDU3Ng==&scene=124#wechat_redirect","Wechat", "_blank");
+		link = createA("https://mp.weixin.qq.com/s?__biz=MzkyMjUwNzQwOA==&mid=2247484037&idx=1&sn=daff3ec3d299ca578f6de5c55b6f82cf&chksm=c1f2037af6858a6c0e8d4bc306cb30e7cc612229d1521498b730b3321b12e84beb68a4d7cef8#rd","Wechat", "_blank");
 	link.position(xpos/ 3.5, ypos/ 4);
 	link.style('color', '#FFFFFF');
 
